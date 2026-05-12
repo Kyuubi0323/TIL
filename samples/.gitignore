@@ -1,2 +1,5 @@
+# Output files
 */*.o
 */*.bc
+*/*.s
+*/*.native

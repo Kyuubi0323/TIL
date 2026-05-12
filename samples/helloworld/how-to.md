@@ -14,4 +14,11 @@ clang -O3 -emit-llvm hello.c -c -o hello.bc
 ./hello
 # AND The second example shows how to invoke the LLVM JIT, lli.
 lli hello.bc
+# Use the llvm-dis util to take a look at lllvm assembly code
+llvm-dis < helllo.bc | less
+# Compile the program to native assembly using the LLC code generator
+llc hello.bc -o hello.s
+# Assemble the native assembly language file into a program
+clang hello.s -o hello.native -no-pie #we need no pie here because llc by default emits code with abs addr incompatible with PIE. You can avoid that entirely by generating PIC-friendly assembly with llc -relocation-model=pic hello.bc -o hello.s                          
+
 ```
