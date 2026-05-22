@@ -1,0 +1,4 @@
+[manifest]
+path = openamp-system-reference
+file = examples/legacy_apps/west.yml
+
