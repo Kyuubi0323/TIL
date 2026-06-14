@@ -1,0 +1,2 @@
+# Load Zephyr board defconfig descriptions.
+osource "/home/kyuubi/work/TIL/zephyr-ws/zephyr/boards/weact/mini_stm32h7b0/Kconfig.defconfig"

@@ -1,0 +1,1 @@
+"mcuboot":"/home/kyuubi/work/TIL/zephyr-ws/bootloader/mcuboot":"/home/kyuubi/work/TIL/zephyr-ws/bootloader/mcuboot/boot/zephyr/sysbuild"
