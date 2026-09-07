@@ -1,0 +1,2 @@
+# Load board Kconfig descriptions.
+osource "/home/kyuubi/work/TIL/zephyr-ws/zephyr/boards/weact/mini_stm32h7b0/Kconfig.mini_stm32h7b0"

@@ -1,0 +1,61 @@
+cmake:
+  application:
+    configuration-dir: '/home/kyuubi/work/TIL/zephyr-ws/apps/learn_blinky'
+    source-dir: '/home/kyuubi/work/TIL/zephyr-ws/apps/learn_blinky'
+  board:
+    name: 'mini_stm32h7b0'
+    path:
+     - '/home/kyuubi/work/TIL/zephyr-ws/zephyr/boards/weact/mini_stm32h7b0'
+    qualifiers: 'stm32h7b0xx'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/kyuubi/work/TIL/zephyr-ws/zephyr/dts/bindings'
+    files:
+     - '/home/kyuubi/work/TIL/zephyr-ws/zephyr/boards/weact/mini_stm32h7b0/mini_stm32h7b0.dts'
+     - '/home/kyuubi/work/TIL/zephyr-ws/apps/learn_blinky/app.overlay'
+    include-dirs:
+     - '/home/kyuubi/work/TIL/zephyr-ws/modules/hal/ambiq/dts'
+     - '/home/kyuubi/work/TIL/zephyr-ws/modules/hal/atmel/include'
+     - '/home/kyuubi/work/TIL/zephyr-ws/modules/hal/bouffalolab/include'
+     - '/home/kyuubi/work/TIL/zephyr-ws/modules/hal/bouffalolab/include/zephyr'
+     - '/home/kyuubi/work/TIL/zephyr-ws/modules/hal/gigadevice/include'
+     - '/home/kyuubi/work/TIL/zephyr-ws/modules/hal/microchip/include'
+     - '/home/kyuubi/work/TIL/zephyr-ws/modules/hal/microchip/dts'
+     - '/home/kyuubi/work/TIL/zephyr-ws/modules/hal/nuvoton/dts'
+     - '/home/kyuubi/work/TIL/zephyr-ws/modules/hal/nxp/dts'
+     - '/home/kyuubi/work/TIL/zephyr-ws/modules/hal/stm32/dts'
+     - '/home/kyuubi/work/TIL/zephyr-ws/modules/hal/ti/dts'
+     - '/home/kyuubi/work/TIL/zephyr-ws/zephyr/include'
+     - '/home/kyuubi/work/TIL/zephyr-ws/zephyr/include/zephyr'
+     - '/home/kyuubi/work/TIL/zephyr-ws/zephyr/dts/common'
+     - '/home/kyuubi/work/TIL/zephyr-ws/zephyr/dts/vendor'
+     - '/home/kyuubi/work/TIL/zephyr-ws/zephyr/dts/rx'
+     - '/home/kyuubi/work/TIL/zephyr-ws/zephyr/dts/x86'
+     - '/home/kyuubi/work/TIL/zephyr-ws/zephyr/dts/xtensa'
+     - '/home/kyuubi/work/TIL/zephyr-ws/zephyr/dts/sparc'
+     - '/home/kyuubi/work/TIL/zephyr-ws/zephyr/dts/riscv'
+     - '/home/kyuubi/work/TIL/zephyr-ws/zephyr/dts/posix'
+     - '/home/kyuubi/work/TIL/zephyr-ws/zephyr/dts/arm64'
+     - '/home/kyuubi/work/TIL/zephyr-ws/zephyr/dts/arm'
+     - '/home/kyuubi/work/TIL/zephyr-ws/zephyr/dts/arc'
+     - '/home/kyuubi/work/TIL/zephyr-ws/zephyr/dts'
+    user-files:
+     - '/home/kyuubi/work/TIL/zephyr-ws/apps/learn_blinky/app.overlay'
+  kconfig:
+    files:
+     - '/home/kyuubi/work/TIL/zephyr-ws/zephyr/boards/weact/mini_stm32h7b0/mini_stm32h7b0_defconfig'
+     - '/home/kyuubi/work/TIL/zephyr-ws/apps/learn_blinky/prj.conf'
+    user-files:
+     - '/home/kyuubi/work/TIL/zephyr-ws/apps/learn_blinky/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/kyuubi/zephyr-sdk-1.0.1'
+  zephyr:
+    version: '4.4.99'
+    zephyr-base: '/home/kyuubi/work/TIL/zephyr-ws/zephyr'
+version: '0.1.0'
+west:
+  command: '/home/kyuubi/work/TIL/zephyr-ws/.venv/bin/west build -p always -b mini_stm32h7b0 .'
+  topdir: '/home/kyuubi/work/TIL/zephyr-ws'
+  version: '1.5.0'
